@@ -1,0 +1,309 @@
+body {
+    background: #000000;
+}
+h2 {
+    margin-bottom: 23px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 51px;
+    line-height: 62px;
+    color: #FFFFFF;
+}
+.suptitle {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+.container {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+.header {
+    padding-top: 23px;
+    display: flex;
+}
+.header__logo {
+    display: flex;
+    align-items: center;
+    margin-right: 108px;
+}
+.header__login {
+    display: flex;
+    align-items: center;
+}
+.header__login-img {
+    margin-right: 14px;
+}
+.header__login-span {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    border: 1px solid #000000;
+    text-decoration: none;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.main {
+    margin-bottom: 169px;
+}
+.main__content {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 74px;
+}
+/* .main__inner::before {
+    position: absolute;
+    left: 850px;
+    top: -300px;
+    content: '';
+    width: 662.63px;
+    height: 783.03px;
+    background: rgba(250, 0, 255, 0.2);
+    filter: blur(250px);
+    transform: rotate(-105.26deg);
+} */
+.main__text {
+    padding-top: 143px;
+}
+.main__text h1 {
+    margin-bottom: 129px;
+    position: relative;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 70px;
+    color: #FFFFFF;
+}
+.main__suptitle {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+}
+.main__suptitle span {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+.main__suptitle-line {
+    width: 139.43px;
+    height: 0px;
+    border: 4px solid #FFFFFF;
+    transform: rotate(120.61deg);
+}
+.main__suptitle-line::after {
+    position: absolute;
+    left: -50px;
+    top: -60px;
+    content: '';
+    width: 125px;
+    height: 125px;
+    background: rgba(96, 92, 234, 0.5);
+    filter: blur(60px);
+}
+.main__content img {
+    position: relative;
+}
+.main__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.main__wrapper span {
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 70px;
+    color: #FFFFFF;
+}
+.main__wrapper-icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.cookies {
+    position: fixed;
+    bottom: -93px;
+    width: 100%;
+    height: 93px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #212834;
+    transition: all 2s ease-out;
+}
+.cookies span {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+.cookies_visible {
+    bottom: 0px;
+}
+
+.coockies__button {
+    width: 132px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 0.5px solid #FFFFFF;
+    border-radius: 6px;
+}
+.coockies__button span {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.two {
+    margin-bottom: 369px;
+}
+/* .two::after {
+    position: absolute;
+    top: 330px;
+    left: -800px;
+    content: url(./img/mobileRotate.png);
+} */
+.two__connect {
+    display: flex;
+    justify-content: space-evenly;
+}
+.two__connect-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 64px 73px 62px 55px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 21.3671px;
+}
+.two__connect-item span {
+    margin-bottom: 30px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+    color: #FFFFFF;
+}
+.two__connect-item a{
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+}
+.two__mobile {
+    padding-right: 11%;
+    display: flex;
+    justify-content: end;
+}
+.two__mobile img {
+    position: absolute;
+    left: 0px;
+}
+.two__mobile-text {
+    margin-top: 210px;
+    position: relative;
+}
+.two__mobile-text h2 {
+    position: relative;
+}
+.two__mobile-text::before {
+    position: absolute;
+    left: 200px;
+    content: '';
+    width: 85px;
+    height: 85px;
+    background: #F101BF;
+    opacity: 0.9;
+    filter: blur(60px);
+}
+.two__mobile-text span {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+.three {
+    margin-bottom: 174px;
+}
+.three__title {
+    position: relative;
+}
+.three__title::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(179.83deg, #000000 -3.1%, rgba(0, 0, 0, 0) 56.76%, #000000 103.92%);
+}
+.three__title-background{
+    width: 100%;
+    height: 836px;
+    object-fit: cover;
+}
+.three__title-phone {
+    position: absolute;
+    padding-top: 440px;
+    padding-left: 130px;
+}
+.three__content {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.four {
+    display: flex;
+    position: relative;
+}
+.four__icons img:nth-child(1){
+    position: relative;
+    left: 337px;
+    bottom: 100px;
+}
+.four__icons img:nth-child(2){
+    position: relative;
+    left: -100px;
+    bottom: 30px;
+}
+.four__icons img:nth-child(3){
+    position: relative;
+    left: -35px;
+    bottom: -120px;
+}
+.four__icons img:nth-child(4){
+    position: relative;
+    left: 25px;
+    bottom: -8px;
+}
+.four__icons img:nth-child(5){
+    position: relative;
+    left: 90px;
+    bottom: -30px;
+}
