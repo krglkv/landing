@@ -178,17 +178,12 @@ h2 {
 .two {
     margin-bottom: 369px;
 }
-/* .two::after {
-    position: absolute;
-    top: 330px;
-    left: -800px;
-    content: url(./img/mobileRotate.png);
-} */
 .two__connect {
     display: flex;
     justify-content: space-evenly;
 }
 .two__connect-item {
+    width: 503px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -215,7 +210,7 @@ h2 {
     color: #FFFFFF;
 }
 .two__mobile {
-    padding-right: 11%;
+    padding-right: 7%;
     display: flex;
     justify-content: end;
 }
@@ -250,7 +245,7 @@ h2 {
 }
 
 .three {
-    margin-bottom: 174px;
+    margin-bottom: 293px;
 }
 .three__title {
     position: relative;
@@ -282,28 +277,41 @@ h2 {
     display: flex;
     position: relative;
 }
+.four__text h2 {
+    white-space: nowrap;
+}
 .four__icons img:nth-child(1){
     position: relative;
-    left: 337px;
-    bottom: 100px;
+    left: 410px;
+    bottom: 130px;
 }
 .four__icons img:nth-child(2){
     position: relative;
-    left: -100px;
-    bottom: 30px;
+    left: -35px;
+    bottom: 60px;
 }
 .four__icons img:nth-child(3){
     position: relative;
-    left: -35px;
-    bottom: -120px;
+    left: 40px;
+    bottom: -90px;
 }
 .four__icons img:nth-child(4){
     position: relative;
-    left: 25px;
-    bottom: -8px;
+    left: 85px;
+    bottom: 50px;
 }
 .four__icons img:nth-child(5){
     position: relative;
-    left: 90px;
-    bottom: -30px;
+    left: 85px;
+    bottom: -100px;
+}
+.four__icons img:nth-child(6){
+    position: relative;
+    left: -40px;
+    bottom: 0px;
+}
+.four__icons img:nth-child(7){
+    position: relative;
+    left: 515px;
+    bottom: -50px;
 }

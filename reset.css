@@ -2,6 +2,7 @@
 
 * {
   margin: 0;
+  box-sizing: border-box;
 }
 html {
     line-height: 1.15;
@@ -18,7 +19,6 @@ html {
     margin: 0.67em 0;
   } */
   hr {
-    box-sizing: content-box;
     height: 0;
     overflow: visible;
   }
