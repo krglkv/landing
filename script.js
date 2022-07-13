@@ -1,14 +1,14 @@
-// const cookies = document.querySelector('.cookies')
-// const cookiesBtn = document.querySelector('.coockies__button')
-// cookiesBtn.addEventListener('click', () => {
-//     cookies.style.display = 'none';
-// })
+const cookies = document.querySelector('.cookies')
+const cookiesBtn = document.querySelector('.coockies__button')
+cookiesBtn.addEventListener('click', () => {
+    cookies.style.display = 'none';
+})
 
-// const coockiesVisible = () => {
-//     cookies.classList.add('cookies_visible')
-//     document.removeEventListener('DOMContentLoaded', coockiesVisible)
-// }
-// document.addEventListener('DOMContentLoaded', coockiesVisible)
+const coockiesVisible = () => {
+    cookies.classList.add('cookies_visible')
+    document.removeEventListener('DOMContentLoaded', coockiesVisible)
+}
+document.addEventListener('DOMContentLoaded', coockiesVisible)
 
 
 

@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 html {
+    overflow-x: hidden;
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
   }
