@@ -521,13 +521,19 @@ h2 {
     align-items: center;
     text-align: center;
 }
-.sendForm form{
+.sendForm__form_wrapper{
     width: 818px;
     margin-top: 82px;
+    margin-bottom: 60px;
     display: grid;
     row-gap: 23px;
 }
-.sendForm input {
+.sendForm__form_wrapper div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 24px;
+}
+.sendForm__form_wrapper input {
     font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 400;
@@ -542,11 +548,6 @@ h2 {
 }
 .sendForm input::-webkit-input-placeholder {
     color: #BFBFBF;
-}
-.sendForm div {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 24px;
 }
 .sendForm button {
     font-family: 'Montserrat';
