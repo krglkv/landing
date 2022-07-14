@@ -24,9 +24,23 @@ h2 {
     max-width: 1440px;
     margin: 0 auto;
 }
-.header {
-    padding-top: 23px;
+
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: -107px;
+    right: 151px;
+    width: 663px;
+    height: 783px;
+    background: rgba(250, 0, 255, 0.2);
+    filter: blur(250px);
+    transform: rotate(-105.26deg);
+}
+.header__inner {
     display: flex;
+    margin-top: 23px;
+    margin-left: 85px;
 }
 .header__logo {
     display: flex;
@@ -37,10 +51,10 @@ h2 {
     display: flex;
     align-items: center;
 }
-.header__login-img {
+.header__login img{
     margin-right: 14px;
 }
-.header__login-span {
+.header__login a{
     font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 500;
@@ -52,31 +66,21 @@ h2 {
     border-bottom: 1px solid #FFFFFF;
 }
 
-.main {
-    margin-bottom: 169px;
+
+.main__inner {
+    position: relative;
+    margin-left: 100px;
+    margin-right: 163px;
 }
 .main__content {
     display: flex;
     justify-content: space-between;
     position: relative;
-    margin-bottom: 74px;
 }
-/* .main__inner::before {
-    position: absolute;
-    left: 850px;
-    top: -300px;
-    content: '';
-    width: 662.63px;
-    height: 783.03px;
-    background: rgba(250, 0, 255, 0.2);
-    filter: blur(250px);
-    transform: rotate(-105.26deg);
-} */
-.main__text {
-    padding-top: 143px;
+.main__content_text {
+    margin-top: 143px;
 }
-.main__text h1 {
-    margin-bottom: 129px;
+.main__content_text h1 {
     position: relative;
     font-family: 'Montserrat';
     font-style: normal;
@@ -85,12 +89,12 @@ h2 {
     line-height: 70px;
     color: #FFFFFF;
 }
-.main__suptitle {
-    display: flex;
-    align-items: flex-end;
+.main__content_text-suptitle {
     position: relative;
+    margin-top: 129px;
+    display: flex;
 }
-.main__suptitle span {
+.main__content_text-suptitle span {
     font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 400;
@@ -98,26 +102,26 @@ h2 {
     line-height: 27px;
     color: #FFFFFF;
 }
-.main__suptitle-line {
-    width: 139.43px;
+.main__content_text-suptitle div {
+    width: 139px;
     height: 0px;
     border: 4px solid #FFFFFF;
     transform: rotate(120.61deg);
 }
-.main__suptitle-line::after {
-    position: absolute;
-    left: -50px;
-    top: -60px;
+.main__content_text-suptitle::before {
     content: '';
+    position: absolute;
+    bottom: 30px;
     width: 125px;
     height: 125px;
     background: rgba(96, 92, 234, 0.5);
-    filter: blur(60px);
+    filter: blur(100px);
 }
 .main__content img {
     position: relative;
 }
 .main__wrapper {
+    margin-top: 74px;
     display: flex;
     justify-content: space-between;
 }
@@ -130,7 +134,7 @@ h2 {
     line-height: 70px;
     color: #FFFFFF;
 }
-.main__wrapper-icons {
+.main__wrapper_icons {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
