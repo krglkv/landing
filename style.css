@@ -21,7 +21,7 @@ h2 {
 
 .container {
     width: 100%;
-    max-width: 1240px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 .header {
@@ -516,10 +516,23 @@ h2 {
 
 
 .sendForm {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+}
+.sendForm::before {
+    content: '';
+    width: 247px;
+    height: 250px;
+    position: absolute;
+    left: 332px;
+    top: -76px;
+    background: linear-gradient(12.08deg, #F101BF 2.82%, #0066FF 97.06%);
+    opacity: 0.3;
+    filter: blur(250px);
+    transform: rotate(5.78deg);
 }
 .sendForm__form_wrapper{
     width: 818px;
@@ -561,4 +574,66 @@ h2 {
     background: #000000;
     border: 1px solid #FFFFFF;
     border-radius: 10px;
+}
+
+
+.footer {
+    position: relative;
+    padding: 0 100px 0 100px;
+    margin-top: 91px;
+}
+.footer::before {
+    content: '';
+    position: absolute;
+    bottom: -140px;
+    left: -59px;
+    width: 406px;
+    height: 412px;
+    background: linear-gradient(12.08deg, #F101BF 2.82%, #0066FF 97.06%);
+    opacity: 0.3;
+    filter: blur(150px);
+    transform: rotate(5.78deg);
+}
+.footer__download {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer__download span{
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+.footer__download_icons {
+    margin-top: 33px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 58px;
+}
+.footer__info {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+.footer__info_contact {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.footer__info_contact span:nth-child(2) {
+    font-weight: 500;
+}
+.footer__terms {
+    display: grid;
+    row-gap: 25px;
 }
