@@ -180,7 +180,12 @@ h2 {
 }
 
 .two {
+    position: relative;
     margin-top: 169px;
+}
+.two img {
+    position: absolute;
+    top: 340px;
 }
 .two__inner {
     margin-left: 176px;
@@ -222,10 +227,6 @@ h2 {
     justify-content: end;
     margin-top: 236px;
 }
-.two__mobile img {
-    position: absolute;
-    left: 0px;
-}
 .two__mobile_text {
     position: relative;
 }
@@ -255,35 +256,38 @@ h2 {
 
 
 .three {
-    margin-top: 283px;
-}
-.three__title {
+    margin-top: 469px;
+    margin-bottom: 368px;
     position: relative;
 }
-.three__title::before {
-    position: absolute;
+.three::before {
     content: '';
+    position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient(179.83deg, #000000 -3.1%, rgba(0, 0, 0, 0) 56.76%, #000000 103.92%);
+    background: linear-gradient(179.83deg, #000000 -3.1%, rgba(0, 0, 0, 0) 56.76%, #000000 83.92%);
 }
-.three__title-background{
+.three__background{
     width: 100%;
     height: 836px;
     object-fit: cover;
 }
-.three__title-phone {
-    white-space: nowrap;
-    position: absolute;
-    left: 90px;
-    top: 440px;
+.three__inner {
+    position: relative;
+    margin-left: 100px;
+    margin-right: 107px;
 }
-.three__title-phone img:nth-child(1) {
-    margin-right: 49px;
+.three__phone {
+    position: absolute;
+    bottom: -74px;
+}
+.three__phone img:nth-child(1) {
+    margin-right: 50px;
 }
 .three__content {
+    position: relative;
     display: flex;
-    justify-content: flex-end;
+    justify-content: end;
 }
 
 
