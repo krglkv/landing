@@ -289,50 +289,73 @@ h2 {
     display: flex;
     justify-content: end;
 }
+.three__content div {
+    position: relative;
+    bottom: 10px;
+}
 
 
 .four {
+    margin-bottom: 300px;
+    position: relative;
+}
+.four::before {
+    content: '';
+    width: 426px;
+    height: 438px;
+    position: absolute;
+    top: -190px;
+    background: linear-gradient(12.08deg, #F101BF 2.82%, #0066FF 97.06%);
+    opacity: 0.1;
+    filter: blur(250px);
+    transform: rotate(5.78deg);
+}
+.four__inner {
+    margin-left: 100px;
+    margin-right: 200px;
     display: flex;
     position: relative;
-    margin-bottom: 400px;
 }
-.four__text h2 {
+.four__content {
     white-space: nowrap;
 }
-.four__icons img:nth-child(1){
+.four__icons {
+    width: 100%;
+}
+.four__icons img:nth-child(1) {
     position: absolute;
-    right: 100px;
     top: -90px;
+    right: 53px;
 }
-.four__icons img:nth-child(2){
+.four__icons img:nth-child(2) {
     position: absolute;
-    right: 298px;
     top: 90px;
+    right: 252px;
 }
-.four__icons img:nth-child(3){
+.four__icons img:nth-child(3) {
     position: absolute;
-    right: 50px;
     top: 90px;
+    right: 0;
 }
-.four__icons img:nth-child(4){
+.four__icons img:nth-child(4) {
     position: absolute;
-    right: 475px;
     top: 150px;
+    right: 425px;
 }
-.four__icons img:nth-child(5){
+.four__icons img:nth-child(5) {
     position: absolute;
-    right: 292px;
-    top: 300px;
+    top: 295px;
+    right: 242px;
 }
-.four__icons img:nth-child(6){
+.four__icons img:nth-child(6) {
     position: absolute;
-    right: 220px;
-    top: 200px;
+    top: 195px;
+    right: 169px;
 }
-.four__icons img:nth-child(7){
+.four__icons img:nth-child(7) {
     position: absolute;
-    right: -25px;
     top: 370px;
+    right: -85px;
 }
 
 
