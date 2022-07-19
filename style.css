@@ -423,9 +423,27 @@ h2 {
 
 
 .six {
-    /* display: flex;
-    justify-content: center; */
+    position: relative;
     margin-bottom: 192px;
+}
+.six__background_text{
+    position: absolute;
+}
+.six__background_text:nth-child(1) {
+    left: 0;
+    top: 260px;
+}
+.six__background_text:nth-child(2) {
+    right: 0;
+    top: 260px;
+}
+.six__background_text:nth-child(3) {
+    left: 0;
+    top: 590px;
+}
+.six__background_text:nth-child(4) {
+    right: 0;
+    top: 540px;
 }
 .six__content::before {
     position: absolute;
@@ -443,12 +461,12 @@ h2 {
     display: flex;
     justify-content: center;
 }
-.six__content-img{
+.six__content_img{
     position: relative;
-    padding-top: 147px;
+    margin-top: 147px;
     margin-bottom: 80px;
 }
-.six__content-arrow {
+.six__content_arrow {
     position: absolute;
     right: 260px;
     top: 431px;
@@ -459,21 +477,23 @@ h2 {
     line-height: 26px;
     color: #FFFFFF;
 }
-.six__content-arrow img {
+.six__content_arrow img {
     position: relative;
     bottom: 35px;
     left: 10px;
 }
-.six__content-text {
+.six__text {
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 
 .seven {
-
+    position: relative;
 }
 .seven__content {
     display: flex;
@@ -485,7 +505,7 @@ h2 {
     display: flex;
     justify-content: center;
 }
-.seven__img::after {
+.seven::before {
     position: absolute;
     content: '';
     width: 287px;
