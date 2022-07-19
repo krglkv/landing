@@ -40,7 +40,7 @@ h2 {
 .header__inner {
     display: flex;
     margin-top: 23px;
-    margin-left: 85px;
+    padding-left: 85px;
 }
 .header__logo {
     display: flex;
@@ -69,8 +69,8 @@ h2 {
 
 .main__inner {
     position: relative;
-    margin-left: 100px;
-    margin-right: 163px;
+    padding-left: 100px;
+    padding-right: 163px;
 }
 .main__content {
     display: flex;
@@ -189,8 +189,8 @@ h2 {
     top: 340px;
 }
 .two__inner {
-    margin-left: 176px;
-    margin-right: 177px;
+    padding-left: 176px;
+    padding-right: 177px;
 }
 .two__connect {
     display: flex;
@@ -275,8 +275,8 @@ h2 {
 }
 .three__inner {
     position: relative;
-    margin-left: 100px;
-    margin-right: 107px;
+    padding-left: 100px;
+    padding-right: 107px;
 }
 .three__phone {
     position: absolute;
@@ -297,7 +297,7 @@ h2 {
 
 
 .four {
-    margin-bottom: 300px;
+    margin-bottom: 400px;
     position: relative;
 }
 .four::before {
@@ -312,8 +312,8 @@ h2 {
     transform: rotate(5.78deg);
 }
 .four__inner {
-    margin-left: 100px;
-    margin-right: 200px;
+    padding-left: 100px;
+    padding-right: 200px;
     display: flex;
     position: relative;
 }
@@ -360,13 +360,64 @@ h2 {
 }
 
 
-.five__background {
+.five {
+    position: relative;
     display: flex;
+    justify-content: center;
+    margin-bottom: 588px;
 }
-.five__background img {
+.five::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 682px;
+    background: linear-gradient(179.83deg, #000000 -3.1%, rgba(0, 0, 0, 0) 56.76%, #000000 83.92%);
+}
+.five__background-img {
     width: 100%;
     max-height: 100%;
     object-fit: cover;
+}
+.five__background-img:nth-child(1) {
+    height: 606px;
+}
+.five__background-img:nth-child(2) {
+    height: 617px;
+    position: relative;
+}
+.five__inner {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    padding-left: 181px;
+    padding-right: 56px;
+}
+.five__logo {
+    position: absolute;
+    top: -87px;
+    right: 95px;
+}
+.five__content {
+    position: relative;
+    top: 537px;
+}
+.five__content_icons {
+    margin-top: 58px;
+}
+.five__content_icons img:nth-child(1) {
+    margin-right: 28px;
+}
+.five__phone {
+    white-space: nowrap;
+}
+.five__phone img:nth-child(1) {
+    position: relative;
+    top: 220px;
+    margin-right: 80px;
+}
+.five__phone img:nth-child(2) {
+    position: relative;
+    top: 561px;
 }
 
 
