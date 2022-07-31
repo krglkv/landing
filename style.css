@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Avenir';
+    src: url('./fonts/Avenir/AvenirLTStd-Book.otf');
+}
+
 body {
     background: #000000;
 }
@@ -495,33 +500,36 @@ h2 {
 .seven {
     position: relative;
 }
-.seven__content {
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 60px;
-}
-.seven__img {
-    position: relative;
-    display: flex;
-    justify-content: center;
-}
 .seven::before {
     position: absolute;
     content: '';
     width: 287px;
     height: 267px;
     right: -108px;
+    top: 175px;
     background: linear-gradient(12.08deg, #F101BF 2.82%, #0066FF 97.06%);
     opacity: 0.2;
-    /* filter: blur(250px); */
-    filter: blur(50px);
+    filter: blur(250px);
     transform: rotate(5.78deg);
 }
-.seven__img-background {
+.seven__inner {
+    padding-left: 160px;
+    padding-right: 160px;
+}
+.seven__content {
+    display: flex;
+    justify-content: flex-end;
+}
+.seven__img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.seven__img_background {
     position: relative;
     display: inline-block;
 }
-.seven__img-background span {
+.seven__img_background span {
     position: absolute;
     background: #000000;
     border: 0.76007px solid rgba(255, 255, 255, 0.5);
@@ -534,23 +542,23 @@ h2 {
     color: #FFFFFF;
 
 }
-#seven__img-span1 {
+#seven__img_span1 {
     top: 204px;
     right: 126px;
     padding: 23px 23px 22px 22px;
 }
-#seven__img-span2 {
+#seven__img_span2 {
     width: 285px;
     top: 359px;
     left: -24px;
     padding: 30px 26px 29px 26px;
 }
-#seven__img-span3 {
+#seven__img_span3 {
     top: 639px;
     right: -12px;
     padding: 19px 24px 18px 23px;
 }
-#seven__img-span4 {
+#seven__img_span4 {
     top: 730px;
     left: 198px;
     padding: 19px 25px 20px 25px;
@@ -558,30 +566,39 @@ h2 {
 
 
 .promo {
+    margin-bottom: 10px;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.promo::before {
+.promo::after {
     content: '';
     position: absolute;
     width: 100%;
     height: 100%;
     background: linear-gradient(360deg, #000000 6.8%, rgba(0, 0, 0, 0) 51.62%, #000000 97.38%);
 }
+.promo__background {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
 .promo__background-item {
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 700;
     font-size: 210px;
-    /* line-height: 287px; */
+    line-height: 210px;
     color: transparent;
     text-transform: uppercase;
     -webkit-text-stroke: 2px #8B8B8B;
 }
-.promo__phone {
+.promo__inner {
     position: absolute;
+    z-index: 1;
+}
+.promo__phone {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -589,18 +606,30 @@ h2 {
 .promo__phone img:nth-child(2) {
     position: absolute;
 }
-.promo__background {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
+
 
 
 .sendForm {
+    position: relative;
+}
+.sendForm__inner {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+}
+.sendForm__inner::before {
+    content: '';
+    position: absolute;
+    top: 731px;
+    right: -120px;
+    width: 337px;
+    height: 341px;
+    background: linear-gradient(12.08deg, #F101BF 2.82%, #0066FF 97.06%);
+    opacity: 0.3;
+    filter: blur(250px);
+    transform: rotate(5.78deg);
 }
 .sendForm::before {
     content: '';
@@ -614,10 +643,11 @@ h2 {
     filter: blur(250px);
     transform: rotate(5.78deg);
 }
+.sendForm__form {
+    margin-top: 82px;
+}
 .sendForm__form_wrapper{
     width: 818px;
-    margin-top: 82px;
-    margin-bottom: 60px;
     display: grid;
     row-gap: 23px;
 }
@@ -633,16 +663,33 @@ h2 {
     font-size: 18px;
     line-height: 25px;
     padding: 29px 23px;
-    width: 100%;
     background: #FFFFFF;
     border: 1px solid #5C5C5C;
     border-radius: 10px;
     outline: none;
 }
+.sendForm__form_wrapper textarea {
+    height: 199px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    padding: 0  23px;
+    padding-top: 29px;
+    background: #FFFFFF;
+    border: 1px solid #5C5C5C;
+    border-radius: 10px;
+    outline: none;
+}
+.sendForm textarea::-webkit-input-placeholder {
+    color: #BFBFBF;
+}
 .sendForm input::-webkit-input-placeholder {
     color: #BFBFBF;
 }
 .sendForm button {
+    margin-top: 60px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
@@ -655,6 +702,7 @@ h2 {
     border: 1px solid #FFFFFF;
     border-radius: 10px;
 }
+
 
 
 .footer {
@@ -710,7 +758,12 @@ h2 {
     display: flex;
     flex-direction: column;
 }
+.footer__info_contact-icon {
+    display: flex;
+}
 .footer__info_contact span:nth-child(2) {
+    margin-top: 16px;
+    margin-bottom: 19px;
     font-weight: 500;
 }
 .footer__terms {

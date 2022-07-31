@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Noto+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
     <title>Document</title>
@@ -163,31 +164,27 @@
             <div class="container">
                 <div class="seven__inner">
                     <div class="seven__content">
-                        <div class="seven__content-text">
+                        <div class="seven__content_text">
                             <h2>Easier ordering. <br> Happier guests.</h2>
                             <span class="suptitle">NoTab makes it simple for patrons to easily</span>
                         </div>
                     </div>
                     <div class="seven__img">
-                        <div class="seven__img-background">
+                        <div class="seven__img_background">
                             <img src="./img/iPhoneXS.png" alt="iPhoneXS">
-                            <span id="seven__img-span1">No more lost or <br>
+                            <span id="seven__img_span1">No more lost or <br>
                                 forgotten credit cards</span>
-                            <span id="seven__img-span2">No more lost or <br>
+                            <span id="seven__img_span2">No more lost or <br>
                                 forgotten credit cards</span>
-                            <span id="seven__img-span3">No more split <br>
+                            <span id="seven__img_span3">No more split <br>
                                 your tab</span>
-                            <span id="seven__img-span4">Skip the line</span>
+                            <span id="seven__img_span4">Skip the line</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <section class="promo">
-            <div class="promo__phone">
-                <img src="./img/Group457rotate.png" alt="">
-                <img src="./img/ScreenshotPhoneRotate.png" alt="">
-            </div>
             <div class="promo__background">
                 <div class="promo__background-item">
                     <span>notab</span>
@@ -211,25 +208,36 @@
                     <span>notab</span>
                 </div>
             </div>
-        </section>
-        <section class="sendForm container">
-            <h2>Get In Touch</h2>
-            <span class="suptitle">Have questions about Noble or just want to say hello? <br>
-                Drop us a line and a member of our team will getback to you shortly.</span>
-            <form action="" class="sendForm__form">
-                <div class="sendForm__form_wrapper">
-                    <input type="text" placeholder="Name">
-                    <input type="text" placeholder="Venue Name">
-                    <div>
-                        <input type="text" placeholder="Venue City">
-                        <input type="text" placeholder="State City">
-                    </div>
-                    <input type="text" placeholder="Email">
-                    <input type="text" placeholder="Subject">
-                    <input type="text" placeholder="Message">
+            <div class="promo__inner container">
+                <div class="promo__phone">
+                    <img src="./img/Group457rotate.png" alt="">
+                    <img src="./img/ScreenshotPhoneRotate.png" alt="">
                 </div>
-                <button type="submit">Send</button>
-            </form>
+            </div>
+        </section>
+        <section class="sendForm">
+            <div class="container">
+                <div class="sendForm__inner">
+                    <h2>Get In Touch</h2>
+                    <span class="suptitle">Have questions about Noble or just want to say hello? <br>
+                        Drop us a line and a member of our team will getback to you shortly.</span>
+                    <form action="" class="sendForm__form">
+                        <div class="sendForm__form_wrapper">
+                            <input type="text" placeholder="Name">
+                            <input type="text" placeholder="Venue Name">
+                            <div>
+                                <input type="text" placeholder="Venue City">
+                                <input type="text" placeholder="State City">
+                            </div>
+                            <input type="text" placeholder="Email">
+                            <input type="text" placeholder="Subject">
+                            <!-- <input type="text" placeholder="Message"> -->
+                            <textarea type="text" placeholder="Message"></textarea>
+                        </div>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
         </section>
         <!-- <aside class="cookies">
             <span>We use cookie to improve your experience on our site. By using our site you consent cookies. </span>
@@ -238,25 +246,35 @@
             </button>
         </aside> -->
     </main>
-    <footer class="footer container">
-        <div class="footer__download">
-            <span>download our app</span>
-            <div class="footer__download_icons">
-                <img src="./img/appStore.png" alt="app store">
-                <img src="./img/googlePlay.png" alt="google play">
-            </div>
-        </div>
-        <div class="footer__info">
-            <div class="footer__info_contact">
-                <span>NOTAB</span>
-                <span>
-                    Contact us: <br> support@notab.com
-                </span>
-                <span>© 2020 - NoTab®</span>
-            </div>
-            <div class="footer__terms">
-                <span>Terms to use</span>
-                <span>Privacy policy</span>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__download">
+                    <span>download our app</span>
+                    <div class="footer__download_icons">
+                        <img src="./img/appStore.png" alt="app store">
+                        <img src="./img/googlePlay.png" alt="google play">
+                    </div>
+                </div>
+                <div class="footer__info">
+                    <div class="footer__info_contact">
+                        <div class="footer__info_contact-icon">
+                            <img src="./img/NOTAB/N.svg" alt="">
+                            <img src="./img/NOTAB/O.svg" alt="">
+                            <img src="./img/NOTAB/T.svg" alt="">
+                            <img src="./img/NOTAB/A.svg" alt="">
+                            <img src="./img/NOTAB/B.svg" alt="">
+                        </div>
+                        <span>
+                            Contact us: <br> support@notab.com
+                        </span>
+                        <span>© 2020 - NoTab®</span>
+                    </div>
+                    <div class="footer__terms">
+                        <span>Terms to use</span>
+                        <span>Privacy policy</span>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
