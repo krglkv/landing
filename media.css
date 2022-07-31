@@ -1,0 +1,32 @@
+@media screen and (max-width: 650px) {
+    html {
+
+    }
+    .header__inner {
+        padding: 0 15px;
+        margin-top: 40px;
+        justify-content: space-between;
+    }
+    .header__logo {
+        margin-right: 0;
+    }
+    .header__logo img:nth-child(1) {
+        width: 51.73px;
+    }
+    .header__logo img:nth-child(2) {
+        width: 46.41px;
+    }
+    .header__login a {
+        font-family: 'Noto Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 19px;
+        color: #FFFFFF;
+        border: 1px solid #000000;
+        border-bottom: 1px solid #FFFFFF;
+    }
+    .header__login img {
+        display: none;
+    }
+}
